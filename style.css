@@ -36,6 +36,8 @@ html{
 .header__logo{
     width: 50%;
     margin: 39rem 84rem 33rem;
+    display: flex;
+    justify-content: center;
 }
 .header__info{
     width: 90%;
@@ -69,14 +71,16 @@ html{
     justify-content: space-evenly;
 }
 .exchange{
+    background-color: var(--Off-White);
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .exchange__img{
-    width: 195rem;
+    width: 60%;
     margin: 60rem auto 40rem;
+    text-align: center;
 }
 .exchange__info{
     width: 90%;
@@ -90,8 +94,135 @@ html{
 }
 .exchange__info p{
     color: var(--Grey);
+    font-weight: 500;
     font-size: 14rem;
     line-height: 18rem;
+}
+.exchange__table{
+    margin: 48px auto 65px;
+    width: 62.5%;
+}  
+.exchange__table__title{
+    color: var(--Bitcoin-Orange);
+    padding-left: 12rem;
+    padding-bottom: 12rem;
+    font-weight: 700;
+    font-size: 18rem;
+    line-height: 24rem;
+}
+.exchange__table__content{
+    background-color: var(--Just-White);
+    border-radius: 8px;
+    display: grid;
+    
+    grid-template-columns: repeat(2, 50%);
+}
+.keysMoney{
+    border: 1px solid var(--Off-White);
+    align-self: center;
+    padding: 10px 12px;
+    color: #B5B0AC;
+    font-weight: 500;
+    font-size: 16rem;
+    line-height: 20rem;
+}
+.keysMoneyValue{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid var(--Off-White);
+    align-self: center;
+    padding: 10px 12px;
+    color: #B5B0AC;
+    font-weight: 400;
+    font-size: 14rem;
+    line-height: 20rem;
+}
+.keysMoneyValue img{
+    width: 11rem;
+}
+.exchange__table__date{
+    background-color: var(--Soft-Orange);
+    text-align: center;
+    border-radius: 8px;
+    margin-top: 16px;
+    padding: 8px;
+    font-weight: 700;
+    font-size: 12rem;
+    line-height: 15rem;
+}
+.features{
+    background-color: var(--Warm-Black);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.batataIcon{
+    position: absolute;
+    top: -12px;
+    left: calc(50% - 19px);
+}
+.features__info{
+    text-align: center;
+    width: 90%;
+    margin: 0  auto
+}
+.features__info h2{
+    color: var(--Just-White);
+    font-weight: 700;
+    font-size: 24rem;
+    line-height: 26rem;
+    padding-top: 64rem;
+    padding-bottom: 24rem;
+}
+.features__info p{
+    color: var(--Grey);
+    padding-bottom: 32px;
+    font-weight: 500;
+    font-size: 14rem;
+    line-height: 18rem;
+}
+.features__box{
+    width: 90%;
+    padding-left: 16px;
+    margin: 0 auto 16px;
+    background-color: var(--Warm-Black-1);
+    border-radius: 4px;
+}
+.features__box img{
+    padding-top: 16px;
+}
+.features__box h3{
+    color: var(--Just-White);
+    padding-top: 12px;
+    padding-bottom: 10px;
+    font-weight: 700;
+    font-size: 18rem;
+    line-height: 18rem;
+}
+.features__box p{
+    color: var(--Grey);
+    padding-right: 20px;
+    padding-bottom: 22px;
+    font-weight: 500;
+    font-size: 14rem;
+    line-height: 18rem  ;
+}
+.posterImage{
+    width: 100%;
+    height: 60vh;
+    background-image: url(./assets/imgs/bitcoinbaby2x.jpg); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.posterImage p{
+    color: var(--Just-White);
+    margin: 0 auto;
+    padding-top: 64px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 24rem;
+    line-height: 26rem;
 }
 .footer{
     background-color: var(--Bitcoin-Orange);
