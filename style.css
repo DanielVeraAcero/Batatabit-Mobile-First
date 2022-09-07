@@ -224,6 +224,148 @@ html{
     font-size: 24rem;
     line-height: 26rem;
 }
+.prices{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #E5E5E5;
+    padding-bottom: 64px;
+}
+.prices__title h2{
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 64px;
+    padding-bottom: 24px;
+    text-align: center;
+    color: var(--Warm-Black);
+    font-weight: 700;
+    font-size: 24rem;
+    line-height: 26rem;
+}
+.prices__title p{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    color: var(--Grey);
+    font-weight: 500;
+    font-size: 14rem;
+    line-height: 18rem;
+}
+.cardSlider{
+    display: flex;
+    gap: 8px;
+    height: auto;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+.card1, .card2{
+    background-color: var(--Just-White);
+    border-radius: 8px;
+    position: relative;
+    scroll-snap-align: center;
+    margin: 50px auto 0;
+    min-width: 190px;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);;
+}
+.card3{
+    background-color: var(--Warm-Black-1);
+    border-radius: 8px;
+    position: relative;
+    scroll-snap-align: center;
+    margin: 50px auto 0;
+    min-width: 190px;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);;
+}
+.card1 h5{
+    position: absolute;
+    top: -15px;
+    color: var(--Just-White);
+    background-color: var(--Bitcoin-Orange);
+    padding: 8px;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 14rem;
+    line-height: 18rem;
+}
+.card2 h5{
+    position: absolute;
+    top: -15px;
+    color: var(--Just-White);
+    background-color: var(--Secondary-Blue);
+    padding: 8px;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 14rem;
+    line-height: 18rem;
+}
+.card3 h5{
+    position: absolute;
+    top: -15px;
+    color: var(--Just-White);
+    background-color: var(--Grey);
+    padding: 8px;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 14rem;
+    line-height: 18rem;
+}
+.card1 h4, .card2 h4, .card3 h4{
+    padding-top: 31px;
+    font-weight: 500;
+    font-size: 14rem;
+    line-height: 18rem;
+}
+.card1 h3, .card2 h3, .card3 h3{
+    padding-top: 8px;
+    font-weight: 700;
+    font-size: 52rem;
+    line-height: 62rem;
+}
+.card1 h3::first-letter, 
+.card2 h3::first-letter, 
+.card3 h3::first-letter{
+    vertical-align: 25px;
+    font-weight: 500;
+    font-size: 12rem;
+    line-height: 15rem;
+}
+.card1 p, .card2 p, .card3 p{
+    width: 82%;
+    color: var(--Grey);
+    text-align: center;
+    font-weight: 500;
+    font-size: 12rem;
+    line-height: 15rem;
+}
+.cardButton, .cardButton2, .cardButton3{
+    display: flex;
+    justify-content: space-between;
+    margin: 16px;
+    align-items: center;
+    text-decoration: none;
+    width: 80%;
+    background-color: var(--Off-White);
+    border: 2px solid var(--Bitcoin-Orange);
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 14rem;
+    line-height: 18rem;
+}
+.cardButton p, .cardButton2 p, .cardButton3 p{
+    padding: 16px 0;
+}
+.cardButton img, .cardButton2 img, .cardButton3 img{
+    padding-right: 20px;
+}
 .footer{
     background-color: var(--Bitcoin-Orange);
     display: flex;
@@ -244,3 +386,9 @@ html{
     text-decoration: none;
     color: var(--Just-White);
 }
+@media (min-width: 600px) { 
+    .cardSlider{
+        justify-content: center;
+    }
+}
+
